@@ -1,0 +1,67 @@
+Bug Bounty roadmap as a beginner :-
+
+	1) learn basic linux commands and install necessary tools required for every bug or steps to find a bug.
+
+	2) steps to find a bug :-
+
+		# infornmation gathering or recon :-
+			
+		*gather infornmation using the special tools in browser that will be in the websites tools list & using linux tools to recon such as amass, nikto, nmap, sublist3r etc.
+
+		*use ffuf to find subdomains or various website paths. for example : https://www.example.com/about/info/passwd/ --> /about/info/passwd/ is the path of any website.
+
+		*how to use ffuf example :- ffuf -w /home/machine/Downloads/common.txt -u https://www.example.com/FUZZ -mc 200 -fc 404,400 -p 1
+
+					!! /home/machine/Downloads/common.txt --> this path and the file name can be changed so while using ffuf give the correct path where the .txt stored
+
+					!! the best way is to clone SecLists in kali linux using :- git clone https://github.com/danielmiessler/SecLists.git ; the best list ever.
+
+		# Understanding Owasp TOP 10 vulnerabilities :-
+
+		*Cross Site Scripting (XSS) & Cross Site Request Forgery (CSRF)
+
+		*SQL Injection
+
+		*Authenticaion Vulnerabilities
+
+		*Server Side Request Forgery (SSRF)
+
+    *Broken Access Control
+
+		*XXE Injections
+
+		*Infornmation Disclosure
+
+		*Path Traversal
+
+		*File Upload Vulnerabilities
+
+		*Business Logic Vulnerabilities
+
+		*Race Conditions {New type of Vulnerablity}
+
+		# Understanding Source Code review :-
+
+			*Source Code review helps to find the end points of any webpage.
+
+		# Understanding Burpsuite :-
+
+			* understanding and working on burpsuite helps to find bugs working on burpsuite helps a hacker to manipulate respone or requests to find bugs here you can manipulate anything to find bugs.
+
+		# Trying CTF's :-
+			
+			* Portswigger lab
+			* PicoCTF
+			* Hacker101 CTF
+			
+			!! these helps you to understand every parameter or every scene that helps you to find bugs easily.
+
+		# Bug Bounty Platforms :-
+
+			* BugCrowd
+		
+			* hackerone
+
+			* OpenBugBounty
+
+																										
